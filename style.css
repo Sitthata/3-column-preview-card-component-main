@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --font-regular: 400;
+  --font-bold: 700;
+  --font-head: "Big Shoulders Display", cursive;
+  --font-paragraph: "Lexend Deca", sans-serif;
+}
+
+body {
+  background-color: bisque;
+  font-family: var(--font-paragraph);
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+}
+/* UITILITY CLASS */
+.attribution {
+  padding-top: 4em;
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.border {
+  border-radius: 1rem;
+}
+
+.card {
+  display: flex;
+  border-radius: 1rem;
+}
+
+.main {
+  position: relative;
+  width: 70%;
+  margin: 5rem auto;
+}
+
+.main h2 {
+  margin-bottom: 2.3rem;
+  font-size: 2rem;
+  font-family: var(--font-head);
+}
+
+.main p {
+  line-height: 1.8;
+}
+
+.main-btn {
+  cursor: pointer;
+  font-family: var(--font-paragraph);
+  border-radius: 2rem;
+  border: none;
+  padding: 0.75rem 2rem;
+  margin-top: 5rem;
+  width: 100%;
+
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  outline: 2.5px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.card1,
+.card2,
+.card3 {
+  padding: 2.5rem;
+}
+
+.card1 {
+  background-color: var(--Bright-orange);
+}
+
+.card2 {
+  background-color: var(--Dark-cyan);
+}
+
+.card3 {
+  background-color: var(--Very-dark-cyan);
+}
+
+@media only screen and (max-width: 730px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
